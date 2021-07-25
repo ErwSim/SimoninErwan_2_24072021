@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
-      integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
-      crossorigin="anonymous"
-    ></script>
-
     <title>Reservia</title>
 
     <link
@@ -15,6 +8,12 @@
       href="https://fonts.googleapis.com/css?family=Raleway"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="margins.css" />
+
+    <script
+      src="https://kit.fontawesome.com/94688da0ae.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="header">
@@ -42,12 +41,8 @@
     </header>
 
     <section>
-      <div>
-        <h1 class="title">
-          Trouvez votre hébergement pour des vacances de rêve
-        </h1>
-        <h3 class="title">En plein centre ville ou en pleine nature</h3>
-      </div>
+      <h1 class="title">Trouvez votre hébergement pour des vacances de rêve</h1>
+      <h3 class="title">En plein centre ville ou en pleine nature</h3>
 
       <form class="textfield">
         <span class="pre"><i class="fas fa-map-marker-alt"></i></span>
@@ -62,6 +57,30 @@
           <i class="icon fas fa-search"></i>
         </button>
       </form>
+
+      <div class="chips mh25">
+        <div class="description">Filtres</div>
+
+        <div class="item">
+          <span class="icon"><i class="fas fa-money-bill-wave"></i></span>
+          <span class="text">Économique</span>
+        </div>
+
+        <div class="item">
+          <span class="icon"><i class="fas fa-child"></i></span>
+          <span class="text">Familial</span>
+        </div>
+
+        <div class="item">
+          <span class="icon"><i class="fas fa-heart"></i></span>
+          <span class="text">Romantique</span>
+        </div>
+
+        <div class="item">
+          <span class="icon"><i class="fas fa-dog"></i></span>
+          <span class="text">Animaux autorisés</span>
+        </div>
+      </div>
     </section>
   </body>
 </html>
