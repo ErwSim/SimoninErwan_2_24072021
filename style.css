@@ -1,3 +1,114 @@
 body {
   font-family: "Raleway";
 }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -25px;
+  height: 80px;
+  margin-bottom: 50px;
+}
+
+.header .logo {
+  margin-top: 5px;
+}
+
+.header .nav-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  text-align: center;
+  vertical-align: text-bottom;
+  opacity: 0.8;
+}
+
+.header .nav-list .nav-item {
+  margin: auto;
+  padding-top: 40px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.header .nav-list .nav-item a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header .nav-list .nav-item.active {
+  border-top: solid 4px;
+  padding-top: 37px;
+  color: #0065fc;
+}
+
+.header .nav-list .nav-item.registration {
+  color: #0065fc;
+  font-weight: bold;
+}
+
+.title {
+  line-height: 12px;
+}
+
+h3.title {
+  opacity: 0.5;
+}
+
+.textfield .pre {
+  border-left: solid 1px #f2f2f2;
+  border-top: solid 1px #f2f2f2;
+  border-bottom: solid 1px #f2f2f2;
+  background-color: #f2f2f2;
+  border-radius: 10px 0 0 10px;
+  padding-top: 7px;
+  padding-bottom: 9px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: -5px;
+}
+
+.textfield .sup {
+  border-right: solid 1px #0065fc;
+  border-top: solid 1px #0065fc;
+  border-bottom: solid 1px #0065fc;
+  background-color: #0065fc;
+  border-radius: 0 10px 10px 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+  font-weight: bold;
+  margin-left: -5px;
+}
+
+.textfield button.sup {
+  cursor: pointer;
+}
+
+.textfield input {
+  border: solid 1px #f2f2f2;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+@media all and (max-device-width: 920px) {
+  .textfield .sup {
+    border-radius: 10px 10px 10px 10px;
+    margin-left: -5px;
+  }
+
+  .textfield .sup .text {
+    display: none;
+  }
+}
+
+@media all and (min-device-width: 920px) {
+  .textfield .sup .icon {
+    display: none;
+  }
+}

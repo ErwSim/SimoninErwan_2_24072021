@@ -1,6 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
+      integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Reservia</title>
 
     <link
@@ -8,12 +15,53 @@
       href="https://fonts.googleapis.com/css?family=Raleway"
     />
     <link rel="stylesheet" href="style.css" />
-
-    <script src="https://use.fontawesome.com/bf5f11f225.js"></script>
   </head>
   <body>
-    <header>
-      <img src="images/logo/Reservia.svg" alt="Reservia" title="Reservia" />
+    <header class="header">
+      <img
+        src="images/logo/Reservia.svg"
+        alt="Reservia"
+        title="Reservia"
+        class="logo"
+      />
+
+      <nav class="nav-list">
+        <ul class="nav-list">
+          <li class="nav-item active">
+            <a href="#" title="Hébergements">Hébergements</a>
+          </li>
+          <li class="nav-item"><a href="#" title="Activités">Activités</a></li>
+        </ul>
+
+        <ul class="nav-list">
+          <li class="nav-item registration">
+            <a href="#" title="S'inscrire">S'inscrire</a>
+          </li>
+        </ul>
+      </nav>
     </header>
+
+    <section>
+      <div>
+        <h1 class="title">
+          Trouvez votre hébergement pour des vacances de rêve
+        </h1>
+        <h3 class="title">En plein centre ville ou en pleine nature</h3>
+      </div>
+
+      <form class="textfield">
+        <span class="pre"><i class="fas fa-map-marker-alt"></i></span>
+        <input
+          type="text"
+          name="Ville"
+          placeholder="Lieu recherché"
+          value="Marseille, France"
+        />
+        <button type="submit" class="sup">
+          <span class="text">Rechercher</span>
+          <i class="icon fas fa-search"></i>
+        </button>
+      </form>
+    </section>
   </body>
 </html>
