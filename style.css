@@ -167,7 +167,7 @@ h3.title {
 .hosting {
   background-color: #f2f2f2;
   border-radius: 10px;
-  padding: 10px;
+  padding: 40px;
 }
 
 .hosting .hosting-title {
@@ -179,6 +179,22 @@ h3.title {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
+}
+
+.card-wrapper-hosting a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-wrapper-trending {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 20px;
+}
+
+.card-wrapper-trending a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .card {
@@ -196,7 +212,7 @@ h3.title {
   border-radius: 10px 10px 0px 0px;
   padding: 4px;
   width: 98%;
-  max-height: 11em;
+  height: 11em;
   object-fit: cover;
   object-position: 100% 50%;
 }
@@ -208,10 +224,10 @@ h3.title {
 .card-ltr img {
   border-radius: 10px 0px 0px 10px;
   padding: 4px;
-  max-width: 3.5em;
-  height: 100%;
+  width: 11em;
+  height: 12em;
   object-fit: cover;
-  object-position: 100% 50%;
+  object-position: 50% 100%;
 }
 
 .card-title {
@@ -222,11 +238,22 @@ h3.title {
 }
 
 .card-description {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   font-style: normal;
   padding-left: 20px;
   padding-right: 10px;
   line-height: 1.5em;
+}
+
+.card-wrapper-trending .card-description {
+  height: 9.5em;
+}
+
+.hosting-description {
+  padding-top: 15px;
+  padding-bottom: 5px;
 }
 
 .blue-text {
