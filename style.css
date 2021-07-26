@@ -158,7 +158,86 @@ h3.title {
   margin-top: -2px;
 }
 
-@media all and (max-device-width: 920px) {
+.hosting-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 30px;
+}
+
+.hosting {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.hosting .hosting-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-wrapper-hosting {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.card {
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.247);
+  display: flex;
+}
+
+.card-ttb {
+  flex-direction: column;
+}
+
+.card-ttb img {
+  border-radius: 10px 10px 0px 0px;
+  padding: 4px;
+  width: 98%;
+  max-height: 11em;
+  object-fit: cover;
+  object-position: 100% 50%;
+}
+
+.card-ltr {
+  flex-direction: row;
+}
+
+.card-ltr img {
+  border-radius: 10px 0px 0px 10px;
+  padding: 4px;
+  max-width: 3.5em;
+  height: 100%;
+  object-fit: cover;
+  object-position: 100% 50%;
+}
+
+.card-title {
+  display: block;
+  padding-left: 20px;
+  padding-right: 10px;
+  line-height: 1.5em;
+}
+
+.card-description {
+  display: block;
+  font-style: normal;
+  padding-left: 20px;
+  padding-right: 10px;
+  line-height: 1.5em;
+}
+
+.blue-text {
+  color: #0065fc;
+}
+
+.grey-text {
+  color: #f2f2f2;
+}
+
+@media all and (max-width: 920px) {
   body {
     font-size: 12px;
   }
@@ -214,7 +293,7 @@ h3.title {
   }
 }
 
-@media all and (min-device-width: 920px) {
+@media all and (min-width: 920px) {
   .logo {
     left: 20px;
     top: 20px;
@@ -233,5 +312,9 @@ h3.title {
     display: flex;
     flex-direction: row-reverse;
     margin-top: -25px;
+  }
+
+  .chips .description {
+    padding-top: 15px;
   }
 }
