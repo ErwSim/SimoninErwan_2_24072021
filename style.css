@@ -2,6 +2,11 @@ body {
   font-family: "Raleway";
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .header {
   min-height: 40px;
   width: 100%;
@@ -187,13 +192,6 @@ h3.title {
   grid-gap: 20px;
 }
 
-.card-wrapper-hosting a,
-.card-wrapper-trending a,
-.activities-wrapper a {
-  text-decoration: none;
-  color: inherit;
-}
-
 .card-wrapper-trending {
   display: grid;
   grid-template-columns: 1fr;
@@ -280,6 +278,21 @@ h3.title {
 
 .grey-text {
   color: #f2f2f2;
+}
+
+.footer {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 3em;
+  padding-right: 30em;
+}
+
+.footer-links a {
+  line-height: 1.8em;
 }
 
 @media all and (max-width: 920px) {
@@ -376,6 +389,11 @@ h3.title {
   .card-activities-medium img,
   .card-activities-huge img {
     height: 11em;
+  }
+
+  .footer {
+    flex-direction: column;
+    padding-right: 0;
   }
 }
 
