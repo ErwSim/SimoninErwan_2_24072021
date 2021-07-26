@@ -27,7 +27,7 @@ body {
   text-align: center;
   vertical-align: text-bottom;
   opacity: 0.8;
-  padding-inline-start: 0;
+  padding: 0;
 }
 
 .header .nav-list .nav-item {
@@ -63,28 +63,23 @@ h3.title {
 }
 
 .textfield .pre {
-  border-left: solid 1px #f2f2f2;
-  border-top: solid 1px #f2f2f2;
-  border-bottom: solid 1px #f2f2f2;
   background-color: #f2f2f2;
   border-radius: 10px 0 0 10px;
-  padding-top: 7px;
-  padding-bottom: 9px;
+  padding-top: 8px;
+  padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: -5px;
 }
 
 .textfield .sup {
-  border-right: solid 1px #0065fc;
-  border-top: solid 1px #0065fc;
-  border-bottom: solid 1px #0065fc;
+  border: none;
   background-color: #0065fc;
   border-radius: 0 10px 10px 0;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   color: white;
   font-weight: bold;
   margin-left: -5px;
@@ -206,7 +201,8 @@ h3.title {
   }
 
   .textfield .pre {
-    padding-top: 11px;
+    padding-top: 12px;
+    padding-bottom: 11px;
   }
 
   .no-display-mobile {
