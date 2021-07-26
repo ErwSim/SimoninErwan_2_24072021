@@ -3,15 +3,21 @@ body {
 }
 
 .header {
+  min-height: 40px;
+  width: 100%;
+  margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
-  margin-top: -25px;
-  height: 80px;
-  margin-bottom: 50px;
 }
 
-.header .logo {
-  margin-top: 5px;
+.logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.header .nav {
+  display: flex;
 }
 
 .header .nav-list {
@@ -21,10 +27,10 @@ body {
   text-align: center;
   vertical-align: text-bottom;
   opacity: 0.8;
+  padding-inline-start: 0;
 }
 
 .header .nav-list .nav-item {
-  margin: auto;
   padding-top: 40px;
   padding-left: 12px;
   padding-right: 12px;
@@ -35,19 +41,21 @@ body {
   text-decoration: none;
 }
 
-.header .nav-list .nav-item.active {
-  border-top: solid 4px;
-  padding-top: 37px;
-  color: #0065fc;
+.header .nav-list .registration {
+  margin: auto;
+  padding-top: 40px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
-.header .nav-list .nav-item.registration {
+.header .nav-list .registration a {
   color: #0065fc;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .title {
-  line-height: 12px;
+  line-height: 0.9em;
 }
 
 h3.title {
@@ -91,25 +99,37 @@ h3.title {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
-  padding-right: 10px;
+  padding-right: 30px;
   font-weight: bold;
 }
 
 .chips {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .chips > * {
   margin-right: 20px;
+  margin-bottom: 5px;
 }
 
 .chips .description {
   font-weight: bold;
-  padding: 15px;
+  padding-left: 15px;
 }
 
-.chips .icon {
+.chips .item {
+  border: solid 1px #f2f2f2;
+  border-radius: 25px;
+  line-height: 50px;
+  padding-right: 10px;
+  cursor: pointer;
+  min-width: 12em;
+  text-align: center;
+}
+
+.chips .item .icon {
   float: left;
   background-color: #deebff;
   border-radius: 25px;
@@ -122,35 +142,100 @@ h3.title {
   transition: all 0.2s ease-in-out;
 }
 
-.chips:hover .icon {
-  font-size: 25px;
-}
-
-.chips .text {
+.chips .item .text {
   font-weight: bold;
 }
 
-.chips .item {
+.chips .item:hover .icon {
+  font-size: 25px;
+}
+
+.info-text {
+  opacity: 0.5;
+  display: inline;
+}
+
+.info-icon {
+  color: #0065fc;
   border: solid 1px #f2f2f2;
-  border-radius: 25px;
-  line-height: 50px;
-  padding-right: 10px;
-  cursor: pointer;
+  border-radius: 50%;
+  padding: 5px 10px 5px 10px;
+  margin-top: -2px;
 }
 
 @media all and (max-device-width: 920px) {
-  .textfield .sup {
-    border-radius: 10px;
-    margin-left: -5px;
+  body {
+    font-size: 12px;
   }
 
-  .textfield .sup .text {
-    display: none;
+  .logo {
+    transform: scale(0.7);
+  }
+
+  .header {
+    margin-top: -20px;
+  }
+
+  .header .nav {
+    display: block;
+    margin-top: -20px;
+    width: 100%;
+  }
+
+  .header .nav .registration {
+    margin-right: -1em;
+  }
+
+  .header .nav-list .nav-item {
+    border: none;
+    border-bottom: solid 4px #f2f2f2;
+    width: 100%;
+    padding-top: 37px;
+    padding-bottom: 10px;
+  }
+
+  .header .nav-list .nav-item.active {
+    border-bottom: solid 4px;
+    padding-top: 37px;
+    color: #0065fc;
+  }
+
+  .textfield .sup {
+    border-radius: 10px;
+    margin-left: -2em;
+  }
+
+  .textfield .pre {
+    padding-top: 11px;
+  }
+
+  .no-display-mobile {
+    display: none !important;
+  }
+
+  .chips .description {
+    width: 100%;
   }
 }
 
 @media all and (min-device-width: 920px) {
-  .textfield .sup .icon {
-    display: none;
+  .logo {
+    left: 20px;
+    top: 20px;
+  }
+  .no-display-other {
+    display: none !important;
+  }
+
+  .header .nav-list .nav-item.active {
+    border-top: solid 4px;
+    padding-top: 37px;
+    color: #0065fc;
+  }
+
+  .header .nav {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: -25px;
   }
 }

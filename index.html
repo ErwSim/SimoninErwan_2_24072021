@@ -3,6 +3,11 @@
   <head>
     <title>Reservia</title>
 
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Raleway"
@@ -16,6 +21,7 @@
     ></script>
   </head>
   <body>
+    <!-- HEADER / NAVBAR -->
     <header class="header">
       <img
         src="images/logo/Reservia.svg"
@@ -24,41 +30,48 @@
         class="logo"
       />
 
-      <nav class="nav-list">
+      <div></div>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="registration">
+            <a href="#" title="S'inscrire" class="registration"> S'inscrire </a>
+          </li>
+        </ul>
+
         <ul class="nav-list">
           <li class="nav-item active">
             <a href="#" title="Hébergements">Hébergements</a>
           </li>
           <li class="nav-item"><a href="#" title="Activités">Activités</a></li>
         </ul>
-
-        <ul class="nav-list">
-          <li class="nav-item registration">
-            <a href="#" title="S'inscrire">S'inscrire</a>
-          </li>
-        </ul>
       </nav>
     </header>
 
-    <section>
-      <h1 class="title">Trouvez votre hébergement pour des vacances de rêve</h1>
-      <h3 class="title">En plein centre ville ou en pleine nature</h3>
+    <h1 class="title">Trouvez votre hébergement pour des vacances de rêve</h1>
+    <h3 class="title">En plein centre ville ou en pleine nature</h3>
 
-      <form class="textfield">
-        <span class="pre"><i class="fas fa-map-marker-alt"></i></span>
-        <input
-          type="text"
-          name="Ville"
-          placeholder="Lieu recherché"
-          value="Marseille, France"
-        />
-        <button type="submit" class="sup">
-          <span class="text">Rechercher</span>
-          <i class="icon fas fa-search"></i>
-        </button>
+    <!--
+      SEARCH AND FILTER
+    -->
+    <section>
+      <form class="mb20">
+        <div class="textfield">
+          <span class="pre"><i class="fas fa-map-marker-alt"></i></span>
+          <input
+            type="text"
+            name="Ville"
+            placeholder="Lieu recherché"
+            value="Marseille, France"
+          />
+          <button type="submit" class="sup">
+            <span class="no-display-mobile">Rechercher</span>
+            <i class="no-display-other fas fa-search"></i>
+          </button>
+        </div>
       </form>
 
-      <div class="chips mh25">
+      <div class="chips">
         <div class="description">Filtres</div>
 
         <div class="item">
@@ -82,5 +95,12 @@
         </div>
       </div>
     </section>
+
+    <aside class="ml15 mt20">
+      <i class="info-icon mr10 fas fa-info"></i>
+      <h3 class="info-text">
+        Plus de 500 logements sont disponibles dans cette ville
+      </h3>
+    </aside>
   </body>
 </html>
