@@ -333,7 +333,7 @@ h3.title {
     padding-bottom: 10px;
   }
 
-  .header .nav-list .nav-item.active {
+  .header .nav-list .nav-item:hover {
     border-bottom: solid 4px;
     color: #0065fc;
   }
@@ -449,7 +449,7 @@ h3.title {
     padding-bottom: 10px;
   }
 
-  .header .nav-list .nav-item.active {
+  .header .nav-list .nav-item:hover {
     border-bottom: solid 4px;
     color: #0065fc;
   }
@@ -569,7 +569,7 @@ h3.title {
     padding-bottom: 10px;
   }
 
-  .header .nav-list .nav-item.active {
+  .header .nav-list .nav-item:hover {
     border-bottom: solid 4px;
     color: #0065fc;
   }
@@ -664,9 +664,9 @@ h3.title {
     display: none !important;
   }
 
-  .header .nav-list .nav-item.active {
+  .header .nav-list .nav-item:hover {
     border-top: solid 4px;
-    padding-top: 37px;
+    padding-top: 36px;
     color: #0065fc;
   }
 
