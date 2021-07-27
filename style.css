@@ -59,6 +59,10 @@ a {
   text-decoration: none;
 }
 
+.container {
+  margin: 20px;
+}
+
 .title {
   line-height: 0.9em;
 }
@@ -111,31 +115,29 @@ h3.title {
 
 .chips > * {
   margin-right: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .chips .description {
   font-weight: bold;
-  padding-left: 15px;
 }
 
 .chips .item {
   border: solid 1px #f2f2f2;
-  border-radius: 25px;
-  line-height: 50px;
+  border-radius: 20px;
+  line-height: 40px;
   padding-right: 10px;
   cursor: pointer;
-  min-width: 12em;
   text-align: center;
 }
 
 .chips .item .icon {
   float: left;
   background-color: #deebff;
-  border-radius: 25px;
-  height: 50px;
-  width: 50px;
-  font-size: 17px;
+  border-radius: 20px;
+  height: 40px;
+  width: 40px;
+  font-size: 15px;
   text-align: center;
   margin-right: 10px;
   color: #0065fc;
@@ -235,13 +237,14 @@ h3.title {
 
 .card-ltr {
   flex-direction: row;
+  max-height: 11.5em;
 }
 
 .card-ltr img {
   border-radius: 15px 0px 0px 15px;
   padding: 4px;
-  width: 11em;
-  height: 12em;
+  width: 10em;
+  height: 11em;
   object-fit: cover;
   object-position: 50% 100%;
 }
@@ -307,17 +310,15 @@ h3.title {
   height: 60%;
 }
 
-@media all and (max-width: 920px) {
+@media all and (max-width: 639px) {
   body {
-    font-size: 12px;
+    font-size: 14px;
+    margin: 0px;
   }
 
   .logo {
     transform: scale(0.7);
-  }
-
-  .header {
-    margin-top: -20px;
+    margin-top: 20px;
   }
 
   .header .nav {
@@ -327,30 +328,40 @@ h3.title {
   }
 
   .header .nav .registration {
-    margin-right: -1em;
+    margin-right: 0;
   }
 
   .header .nav-list .nav-item {
     border: none;
     border-bottom: solid 4px #f2f2f2;
     width: 100%;
-    padding-top: 37px;
+    padding-top: 20px;
     padding-bottom: 10px;
   }
 
   .header .nav-list .nav-item.active {
     border-bottom: solid 4px;
-    padding-top: 37px;
     color: #0065fc;
+  }
+
+  .textfield {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .textfield input {
+    width: 45vw;
   }
 
   .textfield .sup {
     border-radius: 10px;
     margin-left: -2em;
+    width: 35px;
   }
 
   .textfield .pre {
-    padding-top: 12px;
+    padding-top: 10px;
     padding-bottom: 11px;
   }
 
@@ -371,7 +382,7 @@ h3.title {
   .hosting {
     background-color: initial;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     grid-row: 2;
   }
 
@@ -384,7 +395,7 @@ h3.title {
   .trending {
     border-radius: unset;
     background-color: #f2f2f2;
-    padding: 10px;
+    padding: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     grid-row: 1;
@@ -410,7 +421,232 @@ h3.title {
   }
 }
 
-@media all and (min-width: 920px) {
+@media all and (min-width: 640px) and (max-width: 767px) {
+  body {
+    font-size: 14px;
+    margin: 0px;
+  }
+
+  .logo {
+    transform: scale(0.7);
+    margin-top: 20px;
+  }
+
+  .header .nav {
+    display: block;
+    margin-top: -20px;
+    width: 100%;
+  }
+
+  .header .nav .registration {
+    margin-right: 0;
+  }
+
+  .header .nav-list .nav-item {
+    border: none;
+    border-bottom: solid 4px #f2f2f2;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .header .nav-list .nav-item.active {
+    border-bottom: solid 4px;
+    color: #0065fc;
+  }
+
+  .textfield {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .textfield input {
+    width: 45vw;
+  }
+
+  .textfield .sup {
+    border-radius: 10px;
+    margin-left: -2em;
+    width: 35px;
+  }
+
+  .textfield .pre {
+    padding-top: 10px;
+    padding-bottom: 11px;
+  }
+
+  .no-display-mobile {
+    display: none !important;
+  }
+
+  .chips .description {
+    width: 100%;
+  }
+
+  .hosting-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+
+  .hosting {
+    background-color: initial;
+    border-radius: 10px;
+    padding: 20px;
+    grid-row: 2;
+  }
+
+  .card-wrapper-hosting {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .card-wrapper-trending {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .trending {
+    border-radius: unset;
+    background-color: #f2f2f2;
+    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-row: 1;
+  }
+
+  .activities-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+
+  .card-activities-xsmall img,
+  .card-activities-small img,
+  .card-activities-medium img,
+  .card-activities-huge img {
+    height: 11em;
+  }
+
+  .footer {
+    flex-direction: column;
+    padding-right: 0;
+  }
+}
+
+@media all and (min-width: 668px) and (max-width: 1024px) {
+  body {
+    font-size: 14px;
+    margin: 0px;
+  }
+
+  .logo {
+    transform: scale(0.7);
+    margin-top: 20px;
+  }
+
+  .header .nav {
+    display: block;
+    margin-top: -20px;
+    width: 100%;
+  }
+
+  .header .nav .registration {
+    margin-right: 0;
+  }
+
+  .header .nav-list .nav-item {
+    border: none;
+    border-bottom: solid 4px #f2f2f2;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .header .nav-list .nav-item.active {
+    border-bottom: solid 4px;
+    color: #0065fc;
+  }
+
+  .textfield {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .textfield input {
+    width: 45vw;
+  }
+
+  .textfield .sup {
+    border-radius: 10px;
+    margin-left: -2em;
+    width: 35px;
+  }
+
+  .textfield .pre {
+    padding-top: 10px;
+    padding-bottom: 11px;
+  }
+
+  .no-display-mobile {
+    display: none !important;
+  }
+
+  .chips .description {
+    width: 100%;
+  }
+
+  .hosting-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+
+  .hosting {
+    background-color: initial;
+    border-radius: 10px;
+    padding: 20px;
+    grid-row: 2;
+  }
+
+  .card-wrapper-hosting {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .card-wrapper-trending {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .trending {
+    border-radius: unset;
+    background-color: #f2f2f2;
+    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-row: 1;
+  }
+
+  .activities-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+  }
+
+  .card-activities-xsmall img,
+  .card-activities-small img,
+  .card-activities-medium img,
+  .card-activities-huge img {
+    height: 11em;
+  }
+}
+
+@media all and (min-width: 1025px) {
   .logo {
     left: 20px;
     top: 20px;
@@ -433,6 +669,11 @@ h3.title {
 
   .chips .description {
     padding-top: 15px;
+  }
+
+  .hosting-wrapper {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .activities-wrapper {
