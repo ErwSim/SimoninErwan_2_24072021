@@ -15,12 +15,6 @@ a {
   justify-content: space-between;
 }
 
-.logo {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
 .header .nav {
   display: flex;
 }
@@ -60,7 +54,8 @@ a {
 }
 
 .container {
-  margin: 20px;
+  width: 1000px;
+  margin: auto;
 }
 
 .title {
@@ -174,7 +169,7 @@ h3.title {
 .hosting {
   background-color: #f2f2f2;
   border-radius: 10px;
-  padding: 40px;
+  padding: 20px;
 }
 
 .hosting-title {
@@ -185,19 +180,19 @@ h3.title {
 .trending {
   background-color: #f2f2f2;
   border-radius: 10px;
-  padding: 40px;
+  padding: 15px;
 }
 
 .card-wrapper-hosting {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 15px;
 }
 
 .card-wrapper-trending {
   display: grid;
   grid-template-columns: 1fr;
-  grid-row-gap: 20px;
+  grid-row-gap: 15px;
 }
 
 .card {
@@ -229,22 +224,22 @@ h3.title {
 .card-ttb img {
   border-radius: 15px 15px 0px 0px;
   padding: 4px;
-  width: 98%;
-  height: 11em;
+  width: 96%;
+  height: 7em;
   object-fit: cover;
   object-position: 100% 50%;
 }
 
 .card-ltr {
   flex-direction: row;
-  max-height: 11.5em;
+  max-height: 7.5em;
 }
 
 .card-ltr img {
   border-radius: 15px 0px 0px 15px;
   padding: 4px;
-  width: 10em;
-  height: 11em;
+  width: 6em;
+  height: 7em;
   object-fit: cover;
   object-position: 50% 100%;
 }
@@ -252,14 +247,14 @@ h3.title {
 .card-title {
   display: block;
   padding-top: 10px;
-  padding-left: 20px;
+  padding-left: 15px;
   padding-right: 10px;
   line-height: 1.5em;
 }
 
 .card-description {
   font-style: normal;
-  padding-left: 20px;
+  padding-left: 15px;
   padding-right: 10px;
   line-height: 1.5em;
 }
@@ -280,7 +275,7 @@ h3.title {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 3em;
-  padding-right: 30em;
+  padding-right: 10em;
 }
 
 .footer-links a {
@@ -289,21 +284,15 @@ h3.title {
 
 .card-wrapper-trending .hosting-description,
 .card-wrapper-hosting .hosting-description {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 0.5fr) 1.4fr;
-  grid-template-areas:
-    "."
-    "."
-    "notation";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .hosting-notation,
 .trending-notation {
-  grid-area: notation;
-  align-self: end;
-  height: 30%;
   padding-left: 15px;
+  padding-bottom: 10px;
 }
 
 .hosting-notation {
@@ -316,9 +305,14 @@ h3.title {
     margin: 0px;
   }
 
+  .container {
+    width: 100vw;
+  }
+
   .logo {
     transform: scale(0.7);
     margin-top: 20px;
+    position: absolute;
   }
 
   .header .nav {
@@ -421,15 +415,20 @@ h3.title {
   }
 }
 
-@media all and (min-width: 640px) and (max-width: 767px) {
+@media all and (min-width: 640px) and (max-width: 768px) {
   body {
     font-size: 14px;
     margin: 0px;
   }
 
+  .container {
+    width: 615px;
+  }
+
   .logo {
     transform: scale(0.7);
     margin-top: 20px;
+    position: absolute;
   }
 
   .header .nav {
@@ -500,7 +499,7 @@ h3.title {
   .card-wrapper-hosting {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 15px;
   }
 
   .card-wrapper-trending {
@@ -536,15 +535,20 @@ h3.title {
   }
 }
 
-@media all and (min-width: 668px) and (max-width: 1024px) {
+@media all and (min-width: 768px) and (max-width: 1024px) {
   body {
     font-size: 14px;
     margin: 0px;
   }
 
+  .container {
+    width: 750px;
+  }
+
   .logo {
     transform: scale(0.7);
     margin-top: 20px;
+    position: absolute;
   }
 
   .header .nav {
@@ -612,6 +616,11 @@ h3.title {
     grid-row: 2;
   }
 
+  .card-wrapper-hosting,
+  .card-wrapper-trending {
+    font-size: 12px;
+  }
+
   .card-wrapper-hosting {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -646,7 +655,7 @@ h3.title {
   }
 }
 
-@media all and (min-width: 1025px) {
+@media all and (min-width: 1024px) {
   .logo {
     left: 20px;
     top: 20px;
@@ -671,9 +680,9 @@ h3.title {
     padding-top: 15px;
   }
 
-  .hosting-wrapper {
-    margin-left: 20px;
-    margin-right: 20px;
+  .hosting-wrapper,
+  .activities-wrapper {
+    font-size: 14px;
   }
 
   .activities-wrapper {
