@@ -141,6 +141,8 @@ h3.title {
 
 .chips .item .text {
   font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .chips .item:hover .icon {
@@ -338,6 +340,14 @@ h3.title {
     color: #0065fc;
   }
 
+  .ml10-phone {
+    margin-left: 10px;
+  }
+
+  .mr10-phone {
+    margin-right: 10px;
+  }
+
   .textfield {
     display: flex;
     align-items: center;
@@ -361,6 +371,10 @@ h3.title {
 
   .no-display-mobile {
     display: none !important;
+  }
+
+  .chips {
+    margin-left: 10px;
   }
 
   .chips .description {
